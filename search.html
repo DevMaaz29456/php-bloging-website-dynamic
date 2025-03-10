@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <title>A Blogging Website</title>
+  <script>
+    function redirectToCategory() {
+      var category = document.getElementById("category").value;
+      if (category === "all") {
+        window.location.href = "/all_articles.html";
+      } else if (category === "sports") {
+        window.location.href = "https://feedly.com/i/top/sports-blogs";
+      } else if (category === "news") {
+        window.location.href = "https://tribune.com.pk/blogs";
+      } else if (category === "development") {
+        window.location.href = "/development_articles.html";
+      }
+      // Add more categories and corresponding URLs as needed
+    }
+  </script>
+</head>
+<body>
+  <nav class="navigation max-width-1 m-auto">
+    <div class="nav-left">
+      <span>Daily Biz</span>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="bloging_website/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">  
+      <!--Search-->
+      <form>
+        <input class="form-input" type="text" name="query" placeholder="Search articles">
+        <select id="category">
+          <option value="all">All</option>
+          <option value="sports">Sports</option>
+          <option value="news">News</option>
+          <option value="development">Development</option>
+          <!-- Add more categories as needed -->
+        </select>
+        <button type="button" class="btn" onclick="redirectToCategory()">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container max-width-1 m-auto">
+    <!-- Content goes here -->
+    
+    <div class="content-right">
+      <img src="/img/home.jpg" alt="Daily Biz">
+    </div>
+    
+    <!-- New section below the content -->
+    <div class="home-articles max-width-1 m-auto font2">
+      <h2>Search results for blogs (0.04sec) </h2>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/react.jpg" alt="React article image">
+        </div>
+        <div class="home-article-content">
+          <a href="bloging_website/blogposts.html"><h3>React is a popular JavaScript library for building user interfaces.</h3></a>
+          <div>Author Name: Jordan Walke</div> <br>
+          <div>Date: 12 Feb 2024</div> <br>
+          <div>Time to read: 12 mins </div>
+        </div>
+      </div>
+      <!-- Replicate the image and title of the flutter article -->
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/flutter.png" alt="Flutter article image">
+        </div>
+        <div class="home-article-content">
+          <a href="bloging_website/blogposts.html"><h3>Flutter revolutionizes cross-platform app development with speed and elegance</h3></a>
+          <div>Author Name: Navneet Dalal and Mehul Nariyawala</div> <br>
+          <div>Date: 12 Feb 2024</div> <br>
+          <div>Time to read: 12 mins </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer m-auto maaz">
+    <div class="footer-content">
+      <p>&copy; Daily Biz - Your Ultimate Blogging Destination</p>
+      <!-- Additional footer content goes here -->
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <title>A Blogging Website</title>
+  <style>
+    /* Additional CSS for logo */ 
+    .nav-left img {
+      width: 100px; /* Adjust width as needed */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 12px; /* Adjust spacing */
+      vertical-align: middle; /* Align with text */
+      border-radius: 40px; /* Rounded corners */
+    }
+
+    /* Updated CSS for navigation */
+    .navigation {
+      font-family: var(--font1);
+      height: 74px;
+      width: 100%; /* Set width to cover the whole screen */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navigation max-width-1 m-auto">
+    <div class="nav-left">
+      <!-- Logo added here -->
+      <span>Daily Biz</span>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="bloging_website/about.html">About</a></li> <!-- Link to about page -->
+        <li><a href="bloging_website/contact.html">Contact</a></li> <!-- Corrected link to contact page -->
+      </ul>
+    </div>
+    <div class="nav-right">  
+      <!--Search-->
+      <form action="bloging_website/search.html" method="get">
+        <input class="form-input" type="text" name="query" placeholder="Search articles">
+        <button class="btn">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container max-width-1 m-auto">
+    <!-- Content goes here -->
+    <div class="content-left">
+      <h3>Daily Biz Your Ultimate Blogging Destination.</h3>
+      <div class="paragraph-columns">
+        <div>
+          <p>Welcome to Daily Biz – your premier source for daily business insights.</p>
+        </div>
+        <div>
+          <p>Stay informed, stay inspired!</p>
+        </div>
+        <div>
+          <p>Modern architecture embraces the principles of sustainability like never before. Architects are increasingly integrating green technologies and eco-friendly materials into their designs to minimize environmental impact. From passive solar design to green roofs, sustainable architecture not only reduces carbon footprint but also creates healthier and more livable spaces for communities.</p>
+        </div>
+      </div>
+    </div>
+    <div class="max-width-1 m-auto">
+      <hr>
+    </div>
+    <div class="content-right">
+      <img src="/img/main.jpg" alt="Daily Biz">
+    </div>
+    
+    <!-- New section below the HR -->
+    <div class="home-articles max-width-1 m-auto font2">
+      <h2>Featured Articles</h2>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/flutter.png" alt="Flutter article image">
+        </div>
+        <div class="home-article-content">
+          <a href="bloging_website/blogposts.html"><h4>Flutter revolutionizes cross-platform app development with speed and elegance</h4></a>
+          <div>Author Name: Navneet Dalal and Mehul Nariyawala</div> <br>
+          <div>Date: 12 Feb 2024</div> <br>
+          <div>Read time: 12 mins </div>
+        </div>
+      </div>
+      <!-- Replicate the image and title of the flutter article -->
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/react.jpg" alt="Flutter article image">
+        </div>
+        <div class="home-article-content">
+          <a href="bloging_website/blogposts.html"><h4>React is a popular JavaScript library for building user interfaces</h4></a>
+          <div>Author Name: Jordan Walke</div> <br>
+          <div>Date: 12 Feb 2024</div> <br>
+          <div>Read time: 12 mins </div>
+        </div>
+      </div>
+      <!-- Another replication of the Flutter article -->
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/java.png" alt="Flutter article image">
+        </div>
+        <div class="home-article-content">
+          <a href="/blogposts.html"><h4>Java: A powerful and versatile programming language</h4></a>
+          <div>Author Name: James Gosling</div> <br>
+          <div>Date: 12 Feb 2024</div> <br>
+          <div>Read time: 12 mins </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer m-auto maaz">
+    <div class="footer-content">
+      <p>&copy; Daily Biz - Your Ultimate Blogging Destination</p>
+      <!-- Additional footer content goes here -->
+    </div>
+  </div>
+</body>
+</html>
